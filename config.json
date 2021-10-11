@@ -1,0 +1,17 @@
+{
+	"shellyEM":{
+		"username": "<username>",
+		"password": "<password>",
+		"host": "<ip-address--or--hostname>",
+		"channel": "1"
+	},
+	"maxPower": 3300,
+	"timeBeforeAlert": 10,
+	"intervalAlertTime": 1500,
+	"token": "<bot-authorization-token>",
+	"pathToDB": "./db.json",
+	"notifyList": {
+			"<username_1>": true,
+			"<username_2>": false
+	}
+}

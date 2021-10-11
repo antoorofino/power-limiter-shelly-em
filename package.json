@@ -1,0 +1,33 @@
+{
+  "name": "power-limiter-shelly-em",
+  "version": "1.0.1",
+  "description": "Useful script that alerts you when ShellyEM detects a current consumption over a setted threshold. It starts sending continuous messages using a Telegram Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoorofino/power-limiter-shelly-em.git"
+  },
+  "keywords": [
+    "ShellyEM",
+    "home-automation",
+    "bot",
+    "telegram-bot"
+  ],
+  "author": "antoorofino",
+  "license": "MIT",
+  "bin": {
+    "power-limiter": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/antoorofino/power-limiter-shelly-em/issues"
+  },
+  "homepage": "https://github.com/antoorofino/power-limiter-shelly-em#readme",
+  "dependencies": {
+    "console-stamp": "^3.0.3",
+    "simple-json-db": "^1.2.3",
+    "telebot": "^1.4.1"
+  }
+}
