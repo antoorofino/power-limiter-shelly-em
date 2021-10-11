@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var http = require('http');
-var config = require('./config.json');
+var config = require(process.argv[2]);
 const TeleBot = require('telebot');
 const JSONdb = require('simple-json-db');
 require('console-stamp')(console, {format: ':date(yyyy/mm/dd HH:MM:ss)'});

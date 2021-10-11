@@ -9,7 +9,7 @@
 	"timeBeforeAlert": 10,
 	"intervalAlertTime": 1500,
 	"token": "<bot-authorization-token>",
-	"pathToDB": "./db.json",
+	"pathToDB": "/var/power-meter/db.json",
 	"notifyList": {
 			"<username_1>": true,
 			"<username_2>": false

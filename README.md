@@ -21,10 +21,10 @@ Install the package by running the following command:
 ```
 npm install -g power-limiter-shelly-em
 ```
-Then go the the package directory `/usr/local/lib/node_modules/power-limiter-shelly-em` and open the `config.json` file.
-
 
 ### 3. Settings
+
+In order to work the script needs a configuration file. It is provided a sample file that needs to be modified: `config_sample.json`
 
 You need to provide the data to access the ShellEM web panel and set the channel you want to use to monitor the consumption (possible values are `1` or `2`).
 ```
@@ -49,7 +49,7 @@ Here you can define:
 Finally, you must provide the bot authorization token and the list of users that should be texted (`true` for receiving notifications and `false` otherwise). The `pathToDB` will be the path to a file used by the script to store users telegram's id.
 ```
 "token": "<bot-authorization-token>",
-"pathToDB": "./db.json",
+"pathToDB": "/var/power-meter/db.json",
 "notifyList": {
 		"<username_1>": true,
 		"<username_2>": false
@@ -60,7 +60,7 @@ Finally, you must provide the bot authorization token and the list of users that
 
 To start the script simple run:
 ```
-power-limiter
+power-limiter <path-to-your-config.json>
 ```
 
 You may want to run it continuously in the background. To achieve this you can create a systemd service.
@@ -73,7 +73,7 @@ After=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/power-limiter
+ExecStart=/usr/bin/power-limiter <path-to-your-config.json>
 Restart=on-failure
 RestartSec=10
 KillMode=process
