@@ -81,7 +81,7 @@ KillMode=process
 [Install]
 WantedBy=multi-user.target
 ```
-Then, set the right permission by running `chmod 644 /etc/systemd/system/power-limiter.service` and start the service with `systemctl start power-limiter.service`
+Then, set the right permission by running `chmod 644 /etc/systemd/system/power-limiter.service` and start the service with `systemctl start power-limiter.service` and `systemctl enable power-limiter.service`
 
 Now the script will always execute in the background.
 
