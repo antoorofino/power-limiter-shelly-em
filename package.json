@@ -1,6 +1,6 @@
 {
   "name": "power-limiter-shelly-em",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Useful script that alerts you when ShellyEM detects a current consumption over a setted threshold. It starts sending continuous messages using a Telegram Bot",
   "main": "index.js",
   "scripts": {
